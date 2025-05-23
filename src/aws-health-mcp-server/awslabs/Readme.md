@@ -22,46 +22,32 @@ A Model Context Protocol (MCP) server implementation for AWS Health API that ena
 ## Installation
 
 1. Clone the repository:
-```bash
+
 git clone <repository-url>
 cd aws-health-mcp
 
 
-Copy
 
-Insert at cursor
-markdown
-Install required dependencies:
+##  Install required dependencies:
 
 pip install boto3 fastapi uvicorn
 
 
-Copy
 
-Insert at cursor
-bash
-Configure AWS credentials:
+## Configure AWS credentials:
 
 export AWS_ACCESS_KEY_ID="your_access_key"
 export AWS_SECRET_ACCESS_KEY="your_secret_key"
 export AWS_REGION="your_region"
 
 
-Copy
 
-Insert at cursor
-bash
-Usage
-Starting the Server
+## Starting the Server
 Run the FastAPI server using uvicorn:
 
 uvicorn main:app --reload
 
 
-Copy
-
-Insert at cursor
-bash
 The server will start on http://localhost:8000
 
 API Endpoints
@@ -82,10 +68,7 @@ Describe Health Events:
 }
 
 
-Copy
 
-Insert at cursor
-json
 Describe Affected Entities:
 
 {
@@ -96,10 +79,7 @@ Describe Affected Entities:
 }
 
 
-Copy
 
-Insert at cursor
-json
 Describe Event Details:
 
 {
@@ -110,10 +90,7 @@ Describe Event Details:
 }
 
 
-Copy
 
-Insert at cursor
-json
 Response Format
 Successful response:
 
@@ -123,10 +100,7 @@ Successful response:
 }
 
 
-Copy
 
-Insert at cursor
-json
 Error response:
 
 {
@@ -135,11 +109,7 @@ Error response:
 }
 
 
-Copy
-
-Insert at cursor
-json
-Error Handling
+C
 The server implements comprehensive error handling:
 
 Invalid commands return a 500 error with details
@@ -176,31 +146,6 @@ The AWS IAM user/role needs the following permissions:
 }
 
 
-Copy
-
-Insert at cursor
-json
-Development
-Project Structure
-aws-health-mcp/
-├── main.py
-├── requirements.txt
-└── README.md
-
-
-Copy
-
-Insert at cursor
-Contributing
-Fork the repository
-
-Create a feature branch
-
-Commit your changes
-
-Push to the branch
-
-Create a Pull Request
 
 Testing
 To run tests (once implemented):
@@ -208,15 +153,8 @@ To run tests (once implemented):
 pytest
 
 
-Copy
 
-Insert at cursor
-bash
-License
-Add your chosen license here
-
-Support
-For support, please create an issue in the repository.
+## License
 
 Acknowledgments
 AWS Health API Documentation
@@ -225,21 +163,3 @@ FastAPI Documentation
 
 Boto3 Documentation
 
-
-This README.md provides:
-- Clear installation and setup instructions
-- Detailed usage examples
-- Security considerations
-- API documentation
-- Development guidelines
-- Required permissions
-- Project structure
-
-You may want to customize:
-- Repository URLs
-- License information
-- Support channels
-- Any specific deployment instructions for your environment
-- Additional features or limitations specific to your implementation
-
-Remember to keep the README updated as you make changes to the implementation.
