@@ -155,9 +155,6 @@ pytest
 
 
 ## License
--- Add your chosen license here
-
-
 
 Acknowledgments
 AWS Health API Documentation
